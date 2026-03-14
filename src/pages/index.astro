@@ -1,0 +1,368 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Kamil Şevket - Software Engineer">
+  <main>
+    <section class="hero">
+      <div class="avatar">KŞ</div>
+      <h1>Kamil Şevket</h1>
+      <p class="tagline">Software Engineer & iOS Developer</p>
+      <div class="social-links">
+        <a href="https://github.com/kamilsevket" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/kamilsevket" target="_blank">LinkedIn</a>
+        <a href="mailto:hello@kamilsevket.com">Email</a>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        Passionate software engineer specializing in iOS development and modern web technologies.
+        I love building products that make a difference and exploring new technologies.
+      </p>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-category">
+          <h3>Mobile</h3>
+          <ul>
+            <li>Swift & SwiftUI</li>
+            <li>iOS Development</li>
+            <li>React Native</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Laravel</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>DevOps</h3>
+          <ul>
+            <li>Docker</li>
+            <li>CI/CD</li>
+            <li>Linux</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2023 - Present</div>
+          <div class="timeline-content">
+            <h3>Senior iOS Developer</h3>
+            <p class="company">Company Name</p>
+            <p>Building innovative iOS applications with Swift and SwiftUI.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2021 - 2023</div>
+          <div class="timeline-content">
+            <h3>Software Engineer</h3>
+            <p class="company">Another Company</p>
+            <p>Full-stack development with focus on mobile applications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>WakeStake</h3>
+          <p>An iOS app that helps you wake up by putting money on the line.</p>
+          <div class="tags">
+            <span>Swift</span>
+            <span>SwiftUI</span>
+            <span>iOS</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <h3>Project Two</h3>
+          <p>Description of another awesome project you've built.</p>
+          <div class="tags">
+            <span>React</span>
+            <span>Node.js</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Get In Touch</h2>
+      <p>I'm always open to discussing new opportunities and ideas.</p>
+      <a href="mailto:hello@kamilsevket.com" class="cta-button">Say Hello</a>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  :root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --bg: #0f172a;
+    --bg-light: #1e293b;
+    --text: #e2e8f0;
+    --text-muted: #94a3b8;
+    --accent: #38bdf8;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  section {
+    margin-bottom: 4rem;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 4rem 0;
+  }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 auto 1.5rem;
+    color: white;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--text), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .tagline {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .social-links a {
+    color: var(--accent);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--accent);
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+  }
+
+  .social-links a:hover {
+    background: var(--accent);
+    color: var(--bg);
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--text);
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+  }
+
+  .about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+  }
+
+  .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+
+  .skill-category {
+    background: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .skill-category h3 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+
+  .skill-category ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .skill-category li {
+    padding: 0.5rem 0;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--bg);
+  }
+
+  .timeline {
+    position: relative;
+    padding-left: 2rem;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--primary);
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: 0.5rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--bg);
+  }
+
+  .timeline-date {
+    color: var(--accent);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .timeline-content h3 {
+    color: var(--text);
+    margin-bottom: 0.25rem;
+  }
+
+  .timeline-content .company {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .timeline-content p:last-child {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    background: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+  }
+
+  .project-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-4px);
+  }
+
+  .project-card h3 {
+    color: var(--text);
+    margin-bottom: 0.75rem;
+  }
+
+  .project-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  .tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .tags span {
+    background: var(--primary);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .contact {
+    text-align: center;
+    padding: 3rem;
+    background: var(--bg-light);
+    border-radius: 1rem;
+  }
+
+  .contact p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+  }
+
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 2rem;
+    }
+    
+    .social-links {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    main {
+      padding: 1rem;
+    }
+  }
+</style>
