@@ -3,79 +3,153 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Kamil Şevket Demirtaş - Senior iOS Developer">
+  <div class="background-animation"></div>
+  
   <main>
     <section class="hero">
-      <div class="avatar">KŞ</div>
-      <h1>Kamil Şevket Demirtaş</h1>
-      <p class="tagline">Senior iOS Developer</p>
-      <p class="location">📍 Izmir, Turkey</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/kamilsevket" target="_blank">LinkedIn</a>
-        <a href="https://github.com/kamilsevket" target="_blank">GitHub</a>
-        <a href="mailto:kamilsevket@hotmail.com">Email</a>
+      <div class="hero-content">
+        <div class="avatar-glow">
+          <div class="avatar">KŞ</div>
+        </div>
+        <h1 class="hero-title">
+          <span class="title-main">Kamil Şevket</span>
+          <span class="title-sub">Demirtaş</span>
+        </h1>
+        <p class="hero-role">Senior iOS Developer</p>
+        <p class="hero-location">📍 Izmir, Turkey</p>
+        <div class="hero-tags">
+          <span class="tag">Swift</span>
+          <span class="tag">SwiftUI</span>
+          <span class="tag">10M+ Downloads</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#experience" class="btn-primary">View Experience</a>
+          <a href="mailto:kamilsevket@hotmail.com" class="btn-secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="floating-card">
+          <div class="card-icon">📱</div>
+          <div class="card-text">
+            <div class="card-number">10M+</div>
+            <div class="card-label">App Downloads</div>
+          </div>
+        </div>
+        <div class="floating-card" style="animation-delay: 0.5s">
+          <div class="card-icon">🏆</div>
+          <div class="card-text">
+            <div class="card-number">2x</div>
+            <div class="card-label">Startup Winner</div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="about">
-      <h2>About Me</h2>
-      <p>
-        Over <strong>7 years</strong> of iOS development experience, backed by a <strong>BSc in Software Engineering</strong>, 
-        with expertise in Swift, SwiftUI, Objective-C, CocoaPods, and Firebase.
-      </p>
-      <p>
-        Played a key role in the <strong>Turkish Airlines app</strong>, achieving over <strong>10 million downloads</strong>, 
-        8 language support, and a <strong>4.8/5 rating</strong> from 339,000 reviews.
-      </p>
-      <p>
-        A product-driven professional, deeply involved in and embracing the products worked on. 
-        Developed and published <strong>7 iOS apps</strong> as a solo developer during weekends.
-      </p>
+      <div class="section-header">
+        <h2>About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Over <strong class="highlight">7 years</strong> of iOS development experience, backed by a <strong class="highlight">BSc in Software Engineering</strong>, 
+            with expertise in Swift, SwiftUI, Objective-C, CocoaPods, and Firebase.
+          </p>
+          <p>
+            Played a key role in the <strong class="highlight">Turkish Airlines app</strong>, achieving over <strong class="highlight">10 million downloads</strong>, 
+            8 language support, and a <strong class="highlight">4.8/5 rating</strong> from 339,000 reviews.
+          </p>
+          <p>
+            A product-driven professional, deeply involved in and embracing the products worked on. 
+            Developed and published <strong class="highlight">7 iOS apps</strong> as a solo developer during weekends.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-number">7+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">10M+</div>
+            <div class="stat-label">App Downloads</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">339K</div>
+            <div class="stat-label">App Reviews</div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="experience">
-      <h2>Experience</h2>
+    <section class="experience" id="experience">
+      <div class="section-header">
+        <h2>Experience</h2>
+        <div class="section-line"></div>
+      </div>
       <div class="timeline">
         <div class="timeline-item">
-          <div class="timeline-date">05/2023 - Present</div>
+          <div class="timeline-marker"></div>
           <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-date">2023 - Present</div>
+              <div class="timeline-company">Turkish Airlines Technology</div>
+            </div>
             <h3>Senior iOS Developer</h3>
-            <p class="company">Turkish Airlines Technology</p>
-            <ul>
-              <li>Working in Miles&Smiles loyalty department, serving over <strong>5 million members</strong> globally</li>
-              <li>Collaborating with cross-functional teams of <strong>50+ people</strong> on Turkish Airlines iOS app</li>
-              <li>Refactored <strong>20,000+ lines</strong> of Objective-C to Swift using MVVM architecture</li>
-              <li>Implemented <strong>Live Activities</strong>, <strong>Widgets</strong>, and <strong>Watch app</strong> features</li>
-              <li>Leveraging Jenkins for CI/CD to streamline development workflow</li>
+            <div class="timeline-tags">
+              <span class="tag">Swift</span>
+              <span class="tag">Objective-C</span>
+              <span class="tag">MVVM</span>
+              <span class="tag">Live Activities</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Miles&Smiles loyalty department serving <strong>5M+ members</strong> globally</li>
+              <li>Collaborating with <strong>50+ people</strong> cross-functional teams</li>
+              <li>Refactored <strong>20,000+ lines</strong> Objective-C to Swift</li>
+              <li>Implemented Live Activities, Widgets, and Watch app features</li>
             </ul>
           </div>
         </div>
         
         <div class="timeline-item">
-          <div class="timeline-date">03/2021 - 05/2023</div>
+          <div class="timeline-marker"></div>
           <div class="timeline-content">
-            <h3>iOS Developer → Senior iOS Developer</h3>
-            <p class="company">Rapsodo Inc.</p>
-            <ul>
-              <li>Sports analytics company with technologies used by <strong>200,000+ athletes</strong></li>
-              <li>Built <strong>MLM2 Pro iOS app</strong> from scratch; promoted after launching 3 major apps</li>
-              <li>Managed iOS scrum team of <strong>8 people</strong>, handling task distribution and code reviews</li>
-              <li>Rewrote BLE library achieving <strong>21% reduction</strong> in data transmission latency</li>
-              <li>Engineered Performance Analytics feature, driving <strong>75.6% increase</strong> in paid subscriptions</li>
-              <li>Improved crash-free rate by <strong>12%</strong> using Xcode Instruments</li>
+            <div class="timeline-header">
+              <div class="timeline-date">2021 - 2023</div>
+              <div class="timeline-company">Rapsodo Inc.</div>
+            </div>
+            <h3>Senior iOS Developer</h3>
+            <div class="timeline-tags">
+              <span class="tag">CoreBluetooth</span>
+              <span class="tag">Combine</span>
+              <span class="tag">Analytics</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Sports analytics for <strong>200,000+ athletes</strong></li>
+              <li>Built MLM2 Pro app from scratch; promoted after 3 major launches</li>
+              <li>Managed iOS team of <strong>8 people</strong></li>
+              <li>21% BLE latency reduction, 75.6% subscription increase</li>
             </ul>
           </div>
         </div>
         
         <div class="timeline-item">
-          <div class="timeline-date">08/2018 - 03/2021</div>
+          <div class="timeline-marker"></div>
           <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-date">2018 - 2021</div>
+              <div class="timeline-company">Mental Segment Inc. (Talkido)</div>
+            </div>
             <h3>iOS Developer</h3>
-            <p class="company">Mental Segment Inc. (Talkido)</p>
-            <ul>
-              <li>Screen-free interactive learning devices serving <strong>10,000+ children</strong> in 10+ countries</li>
-              <li>Built Talkido iOS app from scratch, reaching <strong>5,000+ users</strong> in 3 months</li>
-              <li>Implemented CoreBluetooth for device communication and FFMpeg for audio processing</li>
-              <li>Created networking layer with Alamofire, CoreData, and Keychain Access</li>
+            <div class="timeline-tags">
+              <span class="tag">UIKit</span>
+              <span class="tag">BLE</span>
+              <span class="tag">FFmpeg</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Screen-free learning devices for <strong>10,000+ children</strong> in 10+ countries</li>
+              <li>Built Talkido app from scratch, reached <strong>5,000+ users</strong> in 3 months</li>
+              <li>Implemented CoreBluetooth and FFMpeg audio processing</li>
             </ul>
           </div>
         </div>
@@ -83,110 +157,114 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <section class="skills">
-      <h2>Skills</h2>
-      <div class="skill-grid">
+      <div class="section-header">
+        <h2>Skills & Technologies</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
         <div class="skill-category">
-          <h3>Languages</h3>
-          <ul>
-            <li>Swift</li>
-            <li>Objective-C</li>
-            <li>SwiftUI</li>
-          </ul>
+          <div class="skill-icon">💻</div>
+          <h3>Programming</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Swift</span>
+            <span class="skill-tag">Objective-C</span>
+            <span class="skill-tag">SwiftUI</span>
+          </div>
         </div>
         <div class="skill-category">
+          <div class="skill-icon">🧩</div>
           <h3>Frameworks</h3>
-          <ul>
-            <li>UIKit</li>
-            <li>CoreBluetooth</li>
-            <li>Combine</li>
-            <li>AVFoundation</li>
-            <li>CoreData</li>
-            <li>StoreKit</li>
-          </ul>
+          <div class="skill-tags">
+            <span class="skill-tag">UIKit</span>
+            <span class="skill-tag">CoreBluetooth</span>
+            <span class="skill-tag">Combine</span>
+            <span class="skill-tag">AVFoundation</span>
+            <span class="skill-tag">CoreData</span>
+          </div>
         </div>
         <div class="skill-category">
+          <div class="skill-icon">🏗️</div>
           <h3>Architecture</h3>
-          <ul>
-            <li>MVVM-C</li>
-            <li>MVVM</li>
-            <li>MVC</li>
-          </ul>
+          <div class="skill-tags">
+            <span class="skill-tag">MVVM-C</span>
+            <span class="skill-tag">MVVM</span>
+            <span class="skill-tag">MVC</span>
+          </div>
         </div>
         <div class="skill-category">
-          <h3>Tools</h3>
-          <ul>
-            <li>Xcode Cloud</li>
-            <li>Jenkins</li>
-            <li>Bitrise</li>
-            <li>Git / JIRA</li>
-          </ul>
-        </div>
-        <div class="skill-category">
+          <div class="skill-icon">🤖</div>
           <h3>AI Tools</h3>
-          <ul>
-            <li>Claude Code</li>
-            <li>ChatGPT</li>
-            <li>Cursor</li>
-            <li>GitHub Copilot</li>
-            <li>n8n</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3>Other</h3>
-          <ul>
-            <li>Firebase</li>
-            <li>REST APIs</li>
-            <li>SPM / CocoaPods</li>
-            <li>AWS S3</li>
-          </ul>
+          <div class="skill-tags">
+            <span class="skill-tag">Claude Code</span>
+            <span class="skill-tag">ChatGPT</span>
+            <span class="skill-tag">Cursor</span>
+            <span class="skill-tag">GitHub Copilot</span>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="highlights">
-      <h2>Highlights</h2>
-      <div class="highlight-grid">
+      <div class="section-header">
+        <h2>Career Highlights</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="highlights-grid">
         <div class="highlight-card">
           <div class="highlight-icon">🍎</div>
-          <h3>WWDC24</h3>
+          <h3>WWDC24 Attendee</h3>
           <p class="highlight-location">San Francisco, USA</p>
-          <p>Attended WWDC 2024 at Apple Park, learned about Swift 6, Apple Intelligence, and iOS 18 updates</p>
+          <p>Learned about Swift 6, Apple Intelligence, and iOS 18 updates at Apple Park</p>
         </div>
         <div class="highlight-card">
           <div class="highlight-icon">🥽</div>
-          <h3>Vision Pro Lab</h3>
+          <h3>Vision Pro Developer</h3>
           <p class="highlight-location">Munich, Germany</p>
-          <p>Hands-on experience with Apple Vision Pro before release, developed and tested visionOS apps</p>
+          <p>Hands-on experience with Apple Vision Pro before release</p>
         </div>
         <div class="highlight-card">
           <div class="highlight-icon">🏆</div>
           <h3>2x Startup Winner</h3>
           <p class="highlight-location">Google Startup Weekend</p>
-          <p>Won 1st place at Startup Weekend Izmir (2016) and Food&Tech (2016) powered by Google</p>
+          <p>1st place winner at Startup Weekend Izmir & Food&Tech 2016</p>
         </div>
       </div>
     </section>
 
     <section class="education">
-      <h2>Education</h2>
-      <div class="edu-card">
-        <h3>BSc Software Engineering</h3>
-        <p class="school">Yaşar University, Izmir</p>
-        <p class="edu-date">2015 - 2019</p>
-        <ul>
-          <li>Developed iOS projects at University's Innovation Center, Minerva</li>
-          <li>Founded Student Technology Club YUBIT, served as board member</li>
-          <li>Internship at Vestel Inc. - Android & embedded systems</li>
-        </ul>
+      <div class="section-header">
+        <h2>Education</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="education-card">
+        <div class="education-icon">🎓</div>
+        <div class="education-content">
+          <h3>BSc Software Engineering</h3>
+          <p class="education-school">Yaşar University, Izmir</p>
+          <p class="education-date">2015 - 2019</p>
+          <ul class="education-achievements">
+            <li>Developed iOS projects at University's Innovation Center</li>
+            <li>Founded Student Technology Club YUBIT</li>
+            <li>Internship at Vestel Inc. - Android & embedded systems</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section class="contact">
-      <h2>Get In Touch</h2>
-      <p>Open to discussing new opportunities and collaborations</p>
-      <div class="contact-links">
-        <a href="mailto:kamilsevket@hotmail.com" class="cta-button">📧 Email Me</a>
-        <a href="https://www.linkedin.com/in/kamilsevket" target="_blank" class="cta-button secondary">💼 LinkedIn</a>
+      <div class="contact-content">
+        <h2>Let's Connect</h2>
+        <p>Open to discussing new opportunities and collaborations</p>
+        <div class="contact-links">
+          <a href="mailto:kamilsevket@hotmail.com" class="contact-btn primary">
+            <span class="btn-icon">📧</span>
+            <span>Email Me</span>
+          </a>
+          <a href="https://www.linkedin.com/in/kamilsevket" target="_blank" class="contact-btn secondary">
+            <span class="btn-icon">💼</span>
+            <span>LinkedIn</span>
+          </a>
+        </div>
       </div>
     </section>
   </main>
@@ -194,116 +272,344 @@ import Layout from '../layouts/Layout.astro';
 
 <style>
   :root {
-    --primary: #2563eb;
-    --primary-dark: #1d4ed8;
+    --primary: #6366f1;
+    --primary-dark: #4f46e5;
+    --secondary: #f59e0b;
+    --accent: #06b6d4;
     --bg: #0f172a;
     --bg-light: #1e293b;
-    --text: #e2e8f0;
+    --bg-lighter: #334155;
+    --text: #f1f5f9;
     --text-muted: #94a3b8;
-    --accent: #38bdf8;
-    --success: #22c55e;
+    --text-light: #cbd5e1;
+    --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
   }
 
   main {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0 2rem;
   }
 
   section {
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
+    position: relative;
   }
 
+  .background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background: 
+      radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(255, 119, 198, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 40% 20%, rgba(119, 198, 255, 0.1) 0%, transparent 50%);
+    animation: backgroundPulse 20s ease-in-out infinite;
+  }
+
+  @keyframes backgroundPulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.5; }
+  }
+
+  /* Hero Section */
   .hero {
-    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 4rem 0;
+    position: relative;
+  }
+
+  .hero-content {
+    flex: 1;
+    max-width: 600px;
+  }
+
+  .avatar-glow {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+
+  .avatar-glow::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: var(--gradient-1);
+    border-radius: 50%;
+    filter: blur(30px);
+    opacity: 0.5;
+    animation: glow 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from { opacity: 0.3; transform: scale(0.95); }
+    to { opacity: 0.6; transform: scale(1.05); }
   }
 
   .avatar {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    background: var(--gradient-1);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2.5rem;
     font-weight: bold;
-    margin: 0 auto 1.5rem;
     color: white;
+    position: relative;
+    z-index: 1;
+    box-shadow: var(--shadow);
   }
 
-  h1 {
-    font-size: 2.75rem;
+  .hero-title {
     margin-bottom: 0.5rem;
-    background: linear-gradient(135deg, var(--text), var(--accent));
+  }
+
+  .title-main {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    background: var(--gradient-1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    margin-bottom: 0.25rem;
   }
 
-  .tagline {
-    font-size: 1.25rem;
-    color: var(--accent);
+  .title-sub {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--text-light);
+  }
+
+  .hero-role {
+    font-size: 1.5rem;
+    color: var(--secondary);
     margin-bottom: 0.5rem;
     font-weight: 500;
   }
 
-  .location {
+  .hero-location {
     color: var(--text-muted);
     margin-bottom: 1.5rem;
   }
 
-  .social-links {
+  .hero-tags {
     display: flex;
-    gap: 1rem;
-    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
     flex-wrap: wrap;
   }
 
-  .social-links a {
-    color: var(--accent);
-    text-decoration: none;
+  .tag {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 0.5rem 1rem;
-    border: 1px solid var(--accent);
-    border-radius: 0.5rem;
-    transition: all 0.3s;
-  }
-
-  .social-links a:hover {
-    background: var(--accent);
-    color: var(--bg);
-  }
-
-  h2 {
-    font-size: 1.75rem;
-    margin-bottom: 1.5rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
     color: var(--text);
-    border-bottom: 2px solid var(--primary);
-    padding-bottom: 0.5rem;
-    display: inline-block;
   }
 
-  .about p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--text-muted);
-    margin-bottom: 1rem;
+  .hero-cta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
   }
 
-  .about strong {
+  .btn-primary, .btn-secondary {
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .btn-primary {
+    background: var(--gradient-1);
+    color: white;
+    box-shadow: var(--shadow);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+  }
+
+  .btn-secondary:hover {
+    background: var(--primary);
+    color: white;
+  }
+
+  .hero-visual {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .floating-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .card-icon {
+    font-size: 2rem;
+  }
+
+  .card-number {
+    font-size: 1.5rem;
+    font-weight: 700;
     color: var(--accent);
   }
 
+  .card-label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+
+  /* Section Headers */
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: var(--gradient-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    white-space: nowrap;
+  }
+
+  .section-line {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, var(--primary), transparent);
+    border-radius: 1px;
+  }
+
+  /* About Section */
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .about-text p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  .highlight {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .about-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .stat-item {
+    background: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border-left: 4px solid var(--accent);
+    transition: all 0.3s ease;
+  }
+
+  .stat-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 0.25rem;
+  }
+
+  .stat-label {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+
+  /* Timeline */
   .timeline {
     position: relative;
-    padding-left: 2rem;
+    padding-left: 3rem;
   }
 
   .timeline::before {
     content: '';
     position: absolute;
-    left: 0;
+    left: 1rem;
     top: 0;
     bottom: 0;
     width: 2px;
@@ -312,194 +618,295 @@ import Layout from '../layouts/Layout.astro';
 
   .timeline-item {
     position: relative;
-    margin-bottom: 2.5rem;
-    padding-left: 1.5rem;
+    margin-bottom: 3rem;
+    padding-left: 2rem;
   }
 
-  .timeline-item::before {
+  .timeline-marker {
+    position: absolute;
+    left: -2.5rem;
+    top: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    background: var(--gradient-1);
+    border-radius: 50%;
+    border: 3px solid var(--bg);
+    box-shadow: 0 0 0 3px var(--primary);
+  }
+
+  .timeline-content {
+    background: var(--bg-light);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .timeline-content::before {
     content: '';
     position: absolute;
-    left: -2rem;
-    top: 0.5rem;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: var(--accent);
-    border: 2px solid var(--bg);
+    left: -0.5rem;
+    top: 1.5rem;
+    width: 1rem;
+    height: 1rem;
+    background: var(--bg-light);
+    transform: rotate(45deg);
+  }
+
+  .timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+  }
+
+  .timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 
   .timeline-date {
-    color: var(--accent);
+    background: var(--gradient-3);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
     font-size: 0.9rem;
-    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+
+  .timeline-company {
+    color: var(--secondary);
     font-weight: 500;
   }
 
   .timeline-content h3 {
     color: var(--text);
-    margin-bottom: 0.25rem;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
   }
 
-  .timeline-content .company {
-    color: var(--text-muted);
-    font-size: 1rem;
-    margin-bottom: 0.75rem;
+  .timeline-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
   }
 
-  .timeline-content ul {
+  .timeline-details {
     list-style: none;
-    padding: 0;
   }
 
-  .timeline-content li {
-    padding: 0.4rem 0;
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    padding-left: 1.2rem;
+  .timeline-details li {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
     position: relative;
   }
 
-  .timeline-content li::before {
+  .timeline-details li::before {
     content: '▸';
     position: absolute;
     left: 0;
-    color: var(--primary);
+    color: var(--accent);
   }
 
-  .timeline-content li strong {
-    color: var(--success);
-  }
-
-  .skill-grid {
+  /* Skills */
+  .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
   }
 
   .skill-category {
     background: var(--bg-light);
-    padding: 1.25rem;
+    padding: 2rem;
     border-radius: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+  }
+
+  .skill-category:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+  }
+
+  .skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
   }
 
   .skill-category h3 {
-    color: var(--accent);
-    margin-bottom: 0.75rem;
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    color: var(--text);
+    margin-bottom: 1rem;
   }
 
-  .skill-category ul {
-    list-style: none;
-    padding: 0;
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
   }
 
-  .skill-category li {
-    padding: 0.35rem 0;
-    color: var(--text-muted);
+  .skill-tag {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
     font-size: 0.9rem;
-    border-bottom: 1px solid var(--bg);
+    color: var(--text-light);
+    transition: all 0.2s ease;
   }
 
-  .skill-category li:last-child {
-    border-bottom: none;
+  .skill-tag:hover {
+    background: var(--primary);
+    color: white;
+    transform: scale(1.05);
   }
 
-  .highlight-grid {
+  /* Highlights */
+  .highlights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
   }
 
   .highlight-card {
     background: var(--bg-light);
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 1rem;
     text-align: center;
-    border: 1px solid transparent;
-    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .highlight-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-1);
   }
 
   .highlight-card:hover {
-    border-color: var(--primary);
-    transform: translateY(-4px);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
   }
 
   .highlight-icon {
-    font-size: 2.5rem;
-    margin-bottom: 0.75rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
   }
 
   .highlight-card h3 {
     color: var(--text);
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
   }
 
   .highlight-location {
     color: var(--accent);
-    font-size: 0.85rem;
-    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
   }
 
   .highlight-card p:last-child {
-    color: var(--text-muted);
-    font-size: 0.9rem;
+    color: var(--text-light);
+    font-size: 0.95rem;
   }
 
-  .edu-card {
+  /* Education */
+  .education-card {
+    display: flex;
+    gap: 2rem;
     background: var(--bg-light);
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 1rem;
+    align-items: flex-start;
   }
 
-  .edu-card h3 {
+  .education-icon {
+    font-size: 3rem;
+    flex-shrink: 0;
+  }
+
+  .education-content {
+    flex: 1;
+  }
+
+  .education-content h3 {
     color: var(--text);
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
   }
 
-  .school {
+  .education-school {
     color: var(--accent);
     margin-bottom: 0.25rem;
   }
 
-  .edu-date {
+  .education-date {
     color: var(--text-muted);
     font-size: 0.9rem;
     margin-bottom: 1rem;
   }
 
-  .edu-card ul {
+  .education-achievements {
     list-style: none;
-    padding: 0;
   }
 
-  .edu-card li {
-    padding: 0.4rem 0;
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    padding-left: 1.2rem;
+  .education-achievements li {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
     position: relative;
   }
 
-  .edu-card li::before {
+  .education-achievements li::before {
     content: '•';
     position: absolute;
     left: 0;
     color: var(--primary);
   }
 
+  /* Contact */
   .contact {
     text-align: center;
-    padding: 3rem;
-    background: var(--bg-light);
-    border-radius: 1rem;
+    padding: 4rem 0;
+    position: relative;
   }
 
-  .contact p {
-    color: var(--text-muted);
-    margin-bottom: 1.5rem;
+  .contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-1);
+    opacity: 0.1;
+    border-radius: 2rem;
+  }
+
+  .contact-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .contact-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+  }
+
+  .contact-content p {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
   }
 
   .contact-links {
@@ -509,49 +916,80 @@ import Layout from '../layouts/Layout.astro';
     flex-wrap: wrap;
   }
 
-  .cta-button {
-    display: inline-block;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
-    color: white;
+  .contact-btn {
     padding: 1rem 2rem;
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
     text-decoration: none;
-    font-weight: 600;
-    transition: transform 0.3s, box-shadow 0.3s;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
   }
 
-  .cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+  .contact-btn.primary {
+    background: var(--gradient-1);
+    color: white;
+    box-shadow: var(--shadow);
   }
 
-  .cta-button.secondary {
+  .contact-btn.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+  }
+
+  .contact-btn.secondary {
     background: transparent;
-    border: 2px solid var(--accent);
-    color: var(--accent);
+    border: 2px solid var(--primary);
+    color: var(--primary);
   }
 
-  .cta-button.secondary:hover {
-    background: var(--accent);
-    color: var(--bg);
+  .contact-btn.secondary:hover {
+    background: var(--primary);
+    color: white;
   }
 
-  @media (max-width: 640px) {
-    h1 {
+  .btn-icon {
+    font-size: 1.2rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+      gap: 3rem;
+    }
+
+    .title-main {
+      font-size: 2.5rem;
+    }
+
+    .title-sub {
       font-size: 2rem;
     }
-    
-    .social-links {
-      flex-direction: column;
-      align-items: center;
+
+    .about-content {
+      grid-template-columns: 1fr;
     }
-    
-    main {
-      padding: 1rem;
+
+    .timeline {
+      padding-left: 2rem;
+    }
+
+    .timeline-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .education-card {
+      flex-direction: column;
+      text-align: center;
     }
 
     .contact-links {
       flex-direction: column;
+      align-items: center;
     }
   }
 </style>
