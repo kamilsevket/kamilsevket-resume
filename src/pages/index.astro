@@ -12,19 +12,9 @@ import Layout from '../layouts/Layout.astro';
         <p class="company">Turkish Airlines</p>
       </div>
 
-      <div class="stats">
-        <div class="stat">
-          <span class="number">7+</span>
-          <span class="label">Years</span>
-        </div>
-        <div class="stat">
-          <span class="number">10M+</span>
-          <span class="label">Downloads</span>
-        </div>
-        <div class="stat">
-          <span class="number">5M+</span>
-          <span class="label">Users</span>
-        </div>
+      <div class="experience">
+        <span class="exp-number">7+</span>
+        <span class="exp-label">Years Experience</span>
       </div>
 
       <div class="links">
@@ -39,7 +29,20 @@ import Layout from '../layouts/Layout.astro';
         </a>
       </div>
 
-
+      <div class="apps">
+        <p class="apps-label">Apps I've worked on</p>
+        <div class="app-links">
+          <a href="https://apps.apple.com/us/app/turkish-airlines-book-flights/id1283414961" target="_blank" class="app-btn">
+            Turkish Airlines
+          </a>
+          <a href="https://apps.apple.com/us/app/rapsodo-mlm2pro/id1659665092" target="_blank" class="app-btn">
+            Rapsodo
+          </a>
+          <a href="https://apps.apple.com/tr/app/talkido/id1538753496" target="_blank" class="app-btn">
+            Talkido
+          </a>
+        </div>
+      </div>
     </div>
   </main>
 </Layout>
@@ -76,7 +79,7 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .profile {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .avatar {
@@ -107,29 +110,22 @@ import Layout from '../layouts/Layout.astro';
     color: #6b7280;
   }
 
-  .stats {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    padding: 1.5rem 0;
+  .experience {
+    padding: 1.25rem 0;
+    margin-bottom: 1.5rem;
     border-top: 1px solid #e5e7eb;
     border-bottom: 1px solid #e5e7eb;
   }
 
-  .stat {
-    text-align: center;
-  }
-
-  .stat .number {
+  .exp-number {
     display: block;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: #667eea;
   }
 
-  .stat .label {
-    font-size: 0.75rem;
+  .exp-label {
+    font-size: 0.8rem;
     color: #6b7280;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -162,30 +158,47 @@ import Layout from '../layouts/Layout.astro';
     transform: translateY(-2px);
   }
 
-  .highlights {
-    text-align: left;
-    padding: 1rem;
+  .apps {
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .apps-label {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+  }
+
+  .app-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .app-btn {
+    padding: 0.5rem 1rem;
     background: #f9fafb;
-    border-radius: 0.75rem;
-  }
-
-  .highlights p {
-    font-size: 0.875rem;
     color: #4b5563;
-    padding: 0.5rem 0;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border: 1px solid #e5e7eb;
   }
 
-  .highlights p:not(:last-child) {
-    border-bottom: 1px solid #e5e7eb;
+  .app-btn:hover {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
   }
 
   @media (max-width: 480px) {
     .container {
       padding: 2rem 1.5rem;
-    }
-
-    .stats {
-      gap: 1.5rem;
     }
   }
 </style>
