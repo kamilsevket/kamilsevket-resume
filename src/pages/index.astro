@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Kamil Şevket Demirtaş">
+  <div class="glow" id="glow"></div>
   <main>
     <div class="container">
       <div class="profile">
@@ -45,6 +46,15 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </main>
+
+  <script>
+    const glow = document.getElementById('glow');
+    
+    document.addEventListener('mousemove', (e) => {
+      glow.style.left = e.clientX + 'px';
+      glow.style.top = e.clientY + 'px';
+    });
+  </script>
 </Layout>
 
 <style>
@@ -56,8 +66,21 @@ import Layout from '../layouts/Layout.astro';
 
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #0a0a0a;
     min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .glow {
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(102, 126, 234, 0.15) 0%, rgba(102, 126, 234, 0.05) 40%, transparent 70%);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    transition: left 0.1s ease-out, top 0.1s ease-out;
   }
 
   main {
@@ -66,16 +89,20 @@ import Layout from '../layouts/Layout.astro';
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    position: relative;
+    z-index: 1;
   }
 
   .container {
-    background: white;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 2rem;
     padding: 3rem 2.5rem;
     max-width: 400px;
     width: 100%;
     text-align: center;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
   }
 
   .profile {
@@ -88,13 +115,14 @@ import Layout from '../layouts/Layout.astro';
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1.5rem;
-    border: 4px solid #667eea;
+    border: 3px solid rgba(102, 126, 234, 0.5);
+    box-shadow: 0 0 30px rgba(102, 126, 234, 0.3);
   }
 
   h1 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: #ffffff;
     margin-bottom: 0.25rem;
   }
 
@@ -113,8 +141,8 @@ import Layout from '../layouts/Layout.astro';
   .experience {
     padding: 1.25rem 0;
     margin-bottom: 1.5rem;
-    border-top: 1px solid #e5e7eb;
-    border-bottom: 1px solid #e5e7eb;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .exp-number {
@@ -144,28 +172,31 @@ import Layout from '../layouts/Layout.astro';
     justify-content: center;
     gap: 0.5rem;
     padding: 0.875rem 1.5rem;
-    background: #f3f4f6;
-    color: #1a1a2e;
+    background: rgba(255, 255, 255, 0.05);
+    color: #e5e7eb;
     text-decoration: none;
     border-radius: 0.75rem;
     font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.2s ease;
   }
 
   .link-btn:hover {
     background: #667eea;
     color: white;
+    border-color: #667eea;
     transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
   }
 
   .apps {
     padding-top: 1.5rem;
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .apps-label {
     font-size: 0.75rem;
-    color: #9ca3af;
+    color: #6b7280;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 1rem;
@@ -180,14 +211,14 @@ import Layout from '../layouts/Layout.astro';
 
   .app-btn {
     padding: 0.5rem 1rem;
-    background: #f9fafb;
-    color: #4b5563;
+    background: rgba(255, 255, 255, 0.03);
+    color: #9ca3af;
     text-decoration: none;
     border-radius: 2rem;
     font-size: 0.8rem;
     font-weight: 500;
     transition: all 0.2s ease;
-    border: 1px solid #e5e7eb;
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .app-btn:hover {
@@ -199,6 +230,11 @@ import Layout from '../layouts/Layout.astro';
   @media (max-width: 480px) {
     .container {
       padding: 2rem 1.5rem;
+    }
+    
+    .glow {
+      width: 400px;
+      height: 400px;
     }
   }
 </style>
