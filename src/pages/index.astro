@@ -1,9 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
-// Get client IP for conditional rendering
-const clientIP = Astro.request.headers.get('x-forwarded-for') || Astro.request.headers.get('x-real-ip') || '';
-const showAdminLink = clientIP.includes('82.138.123.117');
 ---
 
 <Layout title="Kamil Şevket Demirtaş - Senior iOS Developer">
@@ -38,15 +34,7 @@ const showAdminLink = clientIP.includes('82.138.123.117');
           <a href="#experience" class="btn-primary">View Experience</a>
           <a href="mailto:kamilsevket@hotmail.com" class="btn-secondary">Contact</a>
         </div>
-        {showAdminLink && (
-          <div class="admin-access">
-            <p class="admin-note">Admin Panel Access</p>
-            <a href="https://89.167.119.50:8000" target="_blank" class="admin-link">
-              🚀 Coolify Dashboard
-            </a>
-            <p class="admin-hint">Only visible from your current location</p>
-          </div>
-        )}
+
       </div>
     </section>
 
@@ -268,15 +256,7 @@ const showAdminLink = clientIP.includes('82.138.123.117');
               <span>LinkedIn</span>
             </a>
           </div>
-          {showAdminLink && (
-            <div class="admin-access">
-              <p class="admin-note">Admin Panel Access</p>
-              <a href="https://89.167.119.50:8000" target="_blank" class="admin-link">
-                🚀 Coolify Dashboard
-              </a>
-              <p class="admin-hint">Only visible from your current location</p>
-            </div>
-          )}
+
         </div>
       </div>
     </section>
