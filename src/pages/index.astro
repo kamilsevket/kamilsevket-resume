@@ -2,847 +2,194 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Kamil Şevket Demirtaş - Senior iOS Developer">
+<Layout title="Kamil Şevket Demirtaş">
   <main>
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <div class="avatar-wrapper">
-            <div class="avatar">KŞ</div>
-          </div>
-          <div class="hero-text">
-            <h1 class="hero-name">Kamil Şevket Demirtaş</h1>
-            <p class="hero-role">Senior iOS Developer</p>
-            <p class="hero-location">📍 Izmir, Turkey</p>
-          </div>
-        </div>
-        <div class="hero-info">
-          <div class="info-item">
-            <span class="info-label">Experience</span>
-            <span class="info-value">7+ Years</span>
-          </div>
-          <div class="info-item">
-            <span class="info-label">Apps Downloaded</span>
-            <span class="info-value">10M+</span>
-          </div>
-          <div class="info-item">
-            <span class="info-label">Current Role</span>
-            <span class="info-value">Turkish Airlines</span>
-          </div>
-        </div>
-        <div class="hero-actions">
-          <a href="#experience" class="btn-primary">View Experience</a>
-          <a href="mailto:kamilsevket@hotmail.com" class="btn-secondary">Contact</a>
-        </div>
-
+    <div class="container">
+      <div class="profile">
+        <img src="/profile.jpeg" alt="Kamil Şevket Demirtaş" class="avatar" />
+        <h1>Kamil Şevket Demirtaş</h1>
+        <p class="role">Senior iOS Developer</p>
+        <p class="company">Turkish Airlines</p>
       </div>
-    </section>
 
-    <section class="about">
-      <div class="container">
-        <div class="section-header">
-          <h2>About</h2>
-          <p>Experienced iOS developer with a proven track record</p>
+      <div class="stats">
+        <div class="stat">
+          <span class="number">7+</span>
+          <span class="label">Years</span>
         </div>
-        <div class="about-content">
-          <p class="about-text">
-            Over 7 years of iOS development experience, backed by a BSc in Software Engineering from Yaşar University. 
-            Specialized in Swift, SwiftUI, and Objective-C with expertise in building scalable applications.
-          </p>
-          <p class="about-text">
-            Currently leading iOS development at Turkish Airlines Technology, contributing to the Miles&Smiles loyalty app 
-            that serves over 5 million members globally. Previously worked at Rapsodo Inc. and Mental Segment Inc., 
-            delivering high-quality products used by millions of users.
-          </p>
-          <div class="about-highlights">
-            <div class="highlight">
-              <div class="highlight-icon">🏆</div>
-              <div class="highlight-text">Turkish Airlines app with 10M+ downloads</div>
-            </div>
-            <div class="highlight">
-              <div class="highlight-icon">🚀</div>
-              <div class="highlight-text">75.6% subscription increase at Rapsodo</div>
-            </div>
-            <div class="highlight">
-              <div class="highlight-icon">⚡</div>
-              <div class="highlight-text">21% BLE performance improvement</div>
-            </div>
-          </div>
+        <div class="stat">
+          <span class="number">10M+</span>
+          <span class="label">Downloads</span>
+        </div>
+        <div class="stat">
+          <span class="number">5M+</span>
+          <span class="label">Users</span>
         </div>
       </div>
-    </section>
 
-    <section class="experience" id="experience">
-      <div class="container">
-        <div class="section-header">
-          <h2>Experience</h2>
-          <p>Professional journey in iOS development</p>
-        </div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="timeline-period">2023 - Present</div>
-              <div class="timeline-company">Turkish Airlines Technology</div>
-              <h3>Senior iOS Developer</h3>
-              <div class="timeline-description">
-                <p>Leading iOS development for Miles&Smiles loyalty program serving 5M+ members globally.</p>
-                <ul>
-                  <li>Refactored 20,000+ lines of Objective-C to modern Swift with MVVM architecture</li>
-                  <li>Implemented Live Activities, Widgets, and Watch app features</li>
-                  <li>Collaborating with 50+ person cross-functional team</li>
-                </ul>
-              </div>
-              <div class="timeline-tags">
-                <span class="tag">Swift</span>
-                <span class="tag">Objective-C</span>
-                <span class="tag">MVVM</span>
-                <span class="tag">SwiftUI</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="timeline-period">2021 - 2023</div>
-              <div class="timeline-company">Rapsodo Inc.</div>
-              <h3>Senior iOS Developer</h3>
-              <div class="timeline-description">
-                <p>Built sports analytics applications used by 200,000+ athletes worldwide.</p>
-                <ul>
-                  <li>Built MLM2 Pro app from scratch, promoted after 3 major launches</li>
-                  <li>Achieved 21% BLE latency reduction through library optimization</li>
-                  <li>Drove 75.6% increase in paid subscriptions with Performance Analytics</li>
-                </ul>
-              </div>
-              <div class="timeline-tags">
-                <span class="tag">CoreBluetooth</span>
-                <span class="tag">Combine</span>
-                <span class="tag">Analytics</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="timeline-period">2018 - 2021</div>
-              <div class="timeline-company">Mental Segment Inc. (Talkido)</div>
-              <h3>iOS Developer</h3>
-              <div class="timeline-description">
-                <p>Developed screen-free learning applications for children with speech challenges.</p>
-                <ul>
-                  <li>Built Talkido app from scratch, reached 5,000+ users in 3 months</li>
-                  <li>Implemented CoreBluetooth for device communication</li>
-                  <li>Served 10,000+ children across 10+ countries</li>
-                </ul>
-              </div>
-              <div class="timeline-tags">
-                <span class="tag">UIKit</span>
-                <span class="tag">BLE</span>
-                <span class="tag">FFmpeg</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="links">
+        <a href="mailto:kamilsevket@hotmail.com" class="link-btn">
+          <span>✉️</span> Email
+        </a>
+        <a href="https://linkedin.com/in/kamilsevket" target="_blank" class="link-btn">
+          <span>💼</span> LinkedIn
+        </a>
+        <a href="https://github.com/kamilsevket" target="_blank" class="link-btn">
+          <span>🐙</span> GitHub
+        </a>
       </div>
-    </section>
 
-    <section class="skills">
-      <div class="container">
-        <div class="section-header">
-          <h2>Skills</h2>
-          <p>Technical expertise and tools</p>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3>Languages</h3>
-            <div class="skill-list">
-              <div class="skill-item">Swift</div>
-              <div class="skill-item">Objective-C</div>
-              <div class="skill-item">SwiftUI</div>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Frameworks</h3>
-            <div class="skill-list">
-              <div class="skill-item">UIKit</div>
-              <div class="skill-item">CoreBluetooth</div>
-              <div class="skill-item">Combine</div>
-              <div class="skill-item">AVFoundation</div>
-              <div class="skill-item">CoreData</div>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Architecture</h3>
-            <div class="skill-list">
-              <div class="skill-item">MVVM-C</div>
-              <div class="skill-item">MVVM</div>
-              <div class="skill-item">MVC</div>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Tools</h3>
-            <div class="skill-list">
-              <div class="skill-item">Xcode Cloud</div>
-              <div class="skill-item">Jenkins</div>
-              <div class="skill-item">Git / JIRA</div>
-              <div class="skill-item">Firebase</div>
-            </div>
-          </div>
-        </div>
+      <div class="highlights">
+        <p>🍎 WWDC24 Attendee at Apple Park</p>
+        <p>🥽 Vision Pro Lab • Munich</p>
+        <p>🏆 Google Startup Weekend Winner</p>
       </div>
-    </section>
-
-    <section class="achievements">
-      <div class="container">
-        <div class="section-header">
-          <h2>Key Achievements</h2>
-          <p>Notable accomplishments and recognition</p>
-        </div>
-        <div class="achievements-grid">
-          <div class="achievement-card">
-            <div class="achievement-icon">🍎</div>
-            <h3>WWDC24</h3>
-            <p>Attended WWDC 2024 at Apple Park, gained insights on iOS 18, Swift 6, and Apple Intelligence</p>
-          </div>
-          <div class="achievement-card">
-            <div class="achievement-icon">🥽</div>
-            <h3>Vision Pro Lab</h3>
-            <p>Hands-on experience with Apple Vision Pro before release in Munich, Germany</p>
-          </div>
-          <div class="achievement-card">
-            <div class="achievement-icon">🏆</div>
-            <h3>Startup Winner</h3>
-            <p>Won 1st place at Google Startup Weekend Izmir & Food&Tech 2016</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="education">
-      <div class="container">
-        <div class="section-header">
-          <h2>Education</h2>
-          <p>Academic background</p>
-        </div>
-        <div class="education-card">
-          <div class="education-icon">🎓</div>
-          <div class="education-content">
-            <h3>BSc Software Engineering</h3>
-            <p class="education-school">Yaşar University, Izmir</p>
-            <p class="education-date">2015 - 2019</p>
-            <ul class="education-details">
-              <li>Developed iOS projects at University's Innovation Center</li>
-              <li>Founded Student Technology Club YUBIT</li>
-              <li>Internship at Vestel Inc. - Android & embedded systems</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact">
-      <div class="container">
-        <div class="contact-content">
-          <h2>Let's Connect</h2>
-          <p>Open to discussing new opportunities and collaborations</p>
-          <div class="contact-actions">
-            <a href="mailto:kamilsevket@hotmail.com" class="contact-btn primary">
-              <span>Email Me</span>
-            </a>
-            <a href="https://www.linkedin.com/in/kamilsevket" target="_blank" class="contact-btn secondary">
-              <span>LinkedIn</span>
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </section>
+    </div>
   </main>
 </Layout>
 
 <style>
-  :root {
-    --primary: #1a1a1a;
-    --secondary: #f5f5f5;
-    --accent: #2563eb;
-    --text: #1a1a1a;
-    --text-light: #6b7280;
-    --text-muted: #9ca3af;
-    --bg: #ffffff;
-    --bg-light: #f9fafb;
-    --border: #e5e7eb;
-    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  }
-
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
-
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
   }
 
   main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
-
-  section {
-    margin-bottom: 6rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
   }
 
   .container {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  /* Typography */
-  h1, h2, h3 {
-    font-weight: 600;
-    letter-spacing: -0.025em;
-  }
-
-  h1 {
-    font-size: 3rem;
-    line-height: 1.1;
-  }
-
-  h2 {
-    font-size: 2rem;
-    line-height: 1.2;
-  }
-
-  h3 {
-    font-size: 1.25rem;
-    line-height: 1.3;
-  }
-
-  p {
-    color: var(--text-light);
-  }
-
-  /* Hero Section */
-  .hero {
-    padding: 6rem 0 4rem;
+    background: white;
+    border-radius: 2rem;
+    padding: 3rem 2.5rem;
+    max-width: 400px;
+    width: 100%;
     text-align: center;
-    border-bottom: 1px solid var(--border);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   }
 
-  .hero-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 3rem;
-  }
-
-  .avatar-wrapper {
-    flex-shrink: 0;
+  .profile {
+    margin-bottom: 2rem;
   }
 
   .avatar {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    background: var(--primary);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    font-weight: 600;
-    box-shadow: var(--shadow);
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 4px solid #667eea;
   }
 
-  .hero-text {
-    text-align: left;
-  }
-
-  .hero-name {
-    font-size: 2.5rem;
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a2e;
     margin-bottom: 0.25rem;
   }
 
-  .hero-role {
-    font-size: 1.25rem;
-    color: var(--accent);
-    margin-bottom: 0.25rem;
-  }
-
-  .hero-location {
-    color: var(--text-light);
+  .role {
     font-size: 1rem;
+    color: #667eea;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
   }
 
-  .hero-info {
+  .company {
+    font-size: 0.9rem;
+    color: #6b7280;
+  }
+
+  .stats {
     display: flex;
     justify-content: center;
-    gap: 3rem;
-    margin-bottom: 3rem;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
   }
 
-  .info-item {
+  .stat {
     text-align: center;
   }
 
-  .info-label {
+  .stat .number {
     display: block;
-    color: var(--text-light);
-    font-size: 0.875rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a2e;
+  }
+
+  .stat .label {
+    font-size: 0.75rem;
+    color: #6b7280;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin-bottom: 0.25rem;
   }
 
-  .info-value {
-    display: block;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--text);
-  }
-
-  .hero-actions {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-  }
-
-  .btn-primary, .btn-secondary {
-    padding: 0.75rem 2rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.2s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .btn-primary {
-    background: var(--accent);
-    color: white;
-    box-shadow: var(--shadow);
-  }
-
-  .btn-primary:hover {
-    background: #1d4ed8;
-    transform: translateY(-1px);
-  }
-
-  .btn-secondary {
-    background: white;
-    color: var(--text);
-    border: 1px solid var(--border);
-  }
-
-  .btn-secondary:hover {
-    background: var(--bg-light);
-    border-color: var(--accent);
-  }
-
-  /* Admin Access - Only visible from specific IP */
-  .admin-access {
-    margin-top: 2rem;
-    padding: 1rem;
-    background: var(--bg-light);
-    border-radius: 0.5rem;
-    border: 1px solid var(--border);
-  }
-
-  .admin-note {
-    font-size: 0.875rem;
-    color: var(--text-light);
-    margin-bottom: 0.5rem;
-  }
-
-  .admin-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    background: var(--accent);
-    color: white;
-    text-decoration: none;
-    border-radius: 0.375rem;
-    font-weight: 500;
-    transition: all 0.2s ease;
-  }
-
-  .admin-link:hover {
-    background: #1d4ed8;
-    transform: translateY(-1px);
-  }
-
-  .admin-hint {
-    font-size: 0.75rem;
-    color: var(--text-muted);
-    margin-top: 0.5rem;
-  }
-
-  /* Section Headers */
-  .section-header {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-
-  .section-header h2 {
-    margin-bottom: 0.5rem;
-    color: var(--text);
-  }
-
-  .section-header p {
-    color: var(--text-light);
-    font-size: 1.1rem;
-  }
-
-  /* About Section */
-  .about-content {
-    max-width: 700px;
-    margin: 0 auto;
-  }
-
-  .about-text {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin-bottom: 2rem;
-    color: var(--text-light);
-  }
-
-  .about-highlights {
+  .links {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
   }
 
-  .highlight {
+  .link-btn {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    background: var(--bg-light);
-    border-radius: 0.5rem;
-  }
-
-  .highlight-icon {
-    font-size: 1.5rem;
-    flex-shrink: 0;
-  }
-
-  .highlight-text {
-    color: var(--text-light);
-  }
-
-  /* Timeline */
-  .timeline {
-    position: relative;
-    padding-left: 3rem;
-  }
-
-  .timeline::before {
-    content: '';
-    position: absolute;
-    left: 1rem;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: var(--border);
-  }
-
-  .timeline-item {
-    position: relative;
-    margin-bottom: 3rem;
-    padding-left: 2rem;
-  }
-
-  .timeline-marker {
-    position: absolute;
-    left: -2.5rem;
-    top: 0.5rem;
-    width: 2rem;
-    height: 2rem;
-    background: var(--accent);
-    border-radius: 50%;
-    border: 4px solid var(--bg);
-    box-shadow: 0 0 0 2px var(--border);
-  }
-
-  .timeline-content {
-    background: var(--bg-light);
-    padding: 2rem;
-    border-radius: 0.75rem;
-    margin-left: 1rem;
-  }
-
-  .timeline-period {
-    display: inline-block;
-    background: var(--bg-light);
-    padding: 0.25rem 0.75rem;
-    border-radius: 0.25rem;
-    font-size: 0.875rem;
-    color: var(--text-light);
-    margin-bottom: 0.5rem;
-  }
-
-  .timeline-company {
-    font-weight: 600;
-    color: var(--text);
-    margin-bottom: 0.25rem;
-  }
-
-  .timeline-content h3 {
-    color: var(--text);
-    margin-bottom: 0.75rem;
-  }
-
-  .timeline-description p {
-    margin-bottom: 1rem;
-  }
-
-  .timeline-description ul {
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .timeline-description li {
-    margin-bottom: 0.5rem;
-    color: var(--text-light);
-  }
-
-  .timeline-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  .tag {
-    background: var(--bg-light);
-    color: var(--text-light);
-    padding: 0.25rem 0.75rem;
-    border-radius: 0.25rem;
-    font-size: 0.875rem;
-    border: 1px solid var(--border);
-  }
-
-  /* Skills */
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-  }
-
-  .skill-category {
-    text-align: center;
-  }
-
-  .skill-category h3 {
-    margin-bottom: 1rem;
-    color: var(--text);
-  }
-
-  .skill-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .skill-item {
-    padding: 0.5rem 1rem;
-    background: var(--bg-light);
-    border-radius: 0.25rem;
-    color: var(--text-light);
-    border: 1px solid var(--border);
-  }
-
-  /* Achievements */
-  .achievements-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-  }
-
-  .achievement-card {
-    background: var(--bg-light);
-    padding: 2rem;
-    border-radius: 0.75rem;
-    text-align: center;
-    border: 1px solid var(--border);
-  }
-
-  .achievement-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .achievement-card h3 {
-    margin-bottom: 0.5rem;
-    color: var(--text);
-  }
-
-  .achievement-card p {
-    color: var(--text-light);
-  }
-
-  /* Education */
-  .education-card {
-    display: flex;
-    gap: 2rem;
-    background: var(--bg-light);
-    padding: 2rem;
-    border-radius: 0.75rem;
-    border: 1px solid var(--border);
-  }
-
-  .education-icon {
-    font-size: 2.5rem;
-    flex-shrink: 0;
-  }
-
-  .education-content {
-    flex: 1;
-  }
-
-  .education-content h3 {
-    margin-bottom: 0.25rem;
-    color: var(--text);
-  }
-
-  .education-school {
-    font-weight: 600;
-    color: var(--text);
-    margin-bottom: 0.25rem;
-  }
-
-  .education-date {
-    color: var(--text-light);
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
-
-  .education-details {
-    list-style: none;
-  }
-
-  .education-details li {
-    margin-bottom: 0.5rem;
-    padding-left: 1rem;
-    position: relative;
-    color: var(--text-light);
-  }
-
-  .education-details li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    color: var(--accent);
-  }
-
-  /* Contact */
-  .contact {
-    background: var(--bg-light);
-    padding: 4rem 0;
-    text-align: center;
-    border-top: 1px solid var(--border);
-  }
-
-  .contact-content h2 {
-    margin-bottom: 1rem;
-    color: var(--text);
-  }
-
-  .contact-content p {
-    margin-bottom: 2rem;
-    color: var(--text-light);
-  }
-
-  .contact-actions {
-    display: flex;
-    gap: 1rem;
     justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .contact-btn {
-    padding: 0.75rem 2rem;
-    border-radius: 0.5rem;
+    gap: 0.5rem;
+    padding: 0.875rem 1.5rem;
+    background: #f3f4f6;
+    color: #1a1a2e;
     text-decoration: none;
+    border-radius: 0.75rem;
     font-weight: 500;
     transition: all 0.2s ease;
   }
 
-  .contact-btn.primary {
-    background: var(--accent);
+  .link-btn:hover {
+    background: #667eea;
     color: white;
+    transform: translateY(-2px);
   }
 
-  .contact-btn.primary:hover {
-    background: #1d4ed8;
+  .highlights {
+    text-align: left;
+    padding: 1rem;
+    background: #f9fafb;
+    border-radius: 0.75rem;
   }
 
-  .contact-btn.secondary {
-    background: white;
-    color: var(--text);
-    border: 1px solid var(--border);
+  .highlights p {
+    font-size: 0.875rem;
+    color: #4b5563;
+    padding: 0.5rem 0;
   }
 
-  .contact-btn.secondary:hover {
-    background: var(--bg-light);
-    border-color: var(--accent);
+  .highlights p:not(:last-child) {
+    border-bottom: 1px solid #e5e7eb;
   }
 
-  /* Responsive */
-  @media (max-width: 768px) {
-    .hero-content {
-      flex-direction: column;
-      text-align: center;
+  @media (max-width: 480px) {
+    .container {
+      padding: 2rem 1.5rem;
     }
 
-    .hero-text {
-      text-align: center;
-    }
-
-    .hero-info {
-      flex-direction: column;
+    .stats {
       gap: 1.5rem;
-    }
-
-    .timeline {
-      padding-left: 2rem;
-    }
-
-    .timeline-content {
-      margin-left: 0.5rem;
-    }
-
-    .education-card {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .contact-actions {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    main {
-      padding: 0 1rem;
-    }
-    
-    .admin-access {
-      text-align: center;
     }
   }
 </style>
